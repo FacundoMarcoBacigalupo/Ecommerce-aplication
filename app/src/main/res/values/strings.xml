@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!--NavBar Navigation Drawer Seller (Vertical Menu)-->
+    <string name="op_home_v">Home</string>
+    <string name="op_my_shop_v">My Shop</string>
+    <string name="op_review_v">Review</string>
+    <string name="op_close_sesion_v">Close Sesion</string>
+
+    <!--NavBar Footer Seller-->
+    <string name="op_my_products_v">My Products</string>
+    <string name="op_my_orders_v">Orders</string>
+
+    <string name="txt_welcome">Welcome</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

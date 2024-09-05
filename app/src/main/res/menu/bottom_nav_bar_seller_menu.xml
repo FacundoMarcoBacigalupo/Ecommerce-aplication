@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--My Products -->
+    <item
+        android:id="@+id/op_my_products_v"
+        android:title="@string/op_my_products_v"
+        android:icon="@drawable/ico_my_products"
+        />
+
+    <!--Add Product -->
+    <item
+        android:id="@+id/op_add_prod_v"
+        android:title=""
+        android:enabled="false"
+        />
+
+    <!--Orders -->
+    <item
+        android:id="@+id/op_my_orders_v"
+        android:title="@string/op_my_orders_v"
+        android:icon="@drawable/ico_orders"
+        />
+</menu>

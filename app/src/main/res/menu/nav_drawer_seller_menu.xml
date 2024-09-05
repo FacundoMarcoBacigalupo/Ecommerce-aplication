@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_op"
+        android:checkableBehavior="single">
+
+        <!--Home-->
+        <item
+            android:id="@+id/op_home_v"
+            android:title="@string/op_home_v"
+            android:icon="@drawable/ico_home" />
+
+        <!--My Shop-->
+        <item
+            android:id="@+id/op_my_shop_v"
+            android:title="@string/op_my_shop_v"
+            android:icon="@drawable/ico_my_store" />
+
+        <!--Review-->
+        <item
+            android:id="@+id/op_review_v"
+            android:title="@string/op_review_v"
+            android:icon="@drawable/ico_review" />
+    </group>
+
+    <item
+        android:id="@+id/op_close_sesion_v"
+        android:title="@string/op_close_sesion_v"
+        android:icon="@drawable/ico_close_sesion" />
+</menu>

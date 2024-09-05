@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "377124518295",
+    "project_id": "ecommerce-e8369",
+    "storage_bucket": "ecommerce-e8369.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377124518295:android:9700f8f3960a00c64aacd2",
+        "android_client_info": {
+          "package_name": "com.facundo.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUUEcT92XYZtS8-xyoia-suR4wbM4hxm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
