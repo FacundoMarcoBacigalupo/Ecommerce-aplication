@@ -1,4 +1,5 @@
 package com.facundo.ecommerce.Seller
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -15,10 +16,12 @@ import com.facundo.ecommerce.Seller.Nav_Fragments_Seller.FragmentMyShopV
 import com.facundo.ecommerce.Seller.Nav_Fragments_Seller.FragmentReviewsV
 import com.facundo.ecommerce.databinding.ActivityMainSellerBinding
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 
 class MainActivitySeller : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
    private lateinit var binding : ActivityMainSellerBinding
+   private var firebaseAuth : FirebaseAuth? = null
 
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
@@ -27,6 +30,9 @@ class MainActivitySeller : AppCompatActivity() , NavigationView.OnNavigationItem
 
       val toolbar = findViewById<Toolbar>(R.id.toolbar)
       setSupportActionBar(toolbar)
+
+      firebaseAuth = FirebaseAuth.getInstance()
+      checkSesion()
 
       binding.navigationView.setNavigationItemSelectedListener(this)
 
@@ -44,6 +50,20 @@ class MainActivitySeller : AppCompatActivity() , NavigationView.OnNavigationItem
       replaceFragment(FragmentHomeV())
       binding.navigationView.setCheckedItem(R.id.op_home_v)
    }
+
+
+   private fun checkSesion() {
+      //User not init sesion
+      if(firebaseAuth!!.currentUser == null){
+         startActivity(Intent(applicationContext, RegisterSellerActivity::class.java))
+         Toast.makeText(applicationContext, "Seller not Register or not Login", Toast.LENGTH_SHORT).show()
+      }
+      //User in sesion
+      else{
+         Toast.makeText(applicationContext, "Seller online", Toast.LENGTH_SHORT).show()
+      }
+   }
+
 
    private fun replaceFragment(fragment: Fragment) {
       supportFragmentManager
