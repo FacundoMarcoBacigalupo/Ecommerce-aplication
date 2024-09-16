@@ -103,4 +103,5 @@ class MainActivitySeller : AppCompatActivity() , NavigationView.OnNavigationItem
       binding.drawerLayout.closeDrawer(GravityCompat.START)
       return true
    }
+
 }
